@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <div className='navbar'>
-      <img src="public/images/ifhs.png" alt="logo" className='logo' />
+      <img src="src/images/ifhs.png" alt="logo" className='logo' />
       <ul className="nav-menu">
         <li><Link to="/" className='nav-link'>Home</Link></li>
         <li><Link to="/achievement" className='nav-link'>Achievements</Link></li>
