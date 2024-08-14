@@ -1,0 +1,131 @@
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+
+
+.hero h1 {
+    text-align: left;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+
+
+
+  .hero span {
+    padding-top: 10rem;
+    display: inline-block; /* Ensure text is handled properly */
+    background: linear-gradient(100deg, #4a90e2 0%, #7ed321 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1.5s ease; /* Optional: smooth transition for other properties */
+  }
+  
+  
+
+
+.hero span:hover {
+    transform: scale(1.15);
+}
+
+.hero h2{ 
+    text-align: left;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+.hero p {
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 11.5rem;
+    margin-top: 1rem;
+
+
+}
+
+
+@media (max-width: 768px) {
+    .hero p {
+      padding-left: 5rem; /* Adjust padding for smaller screens */
+      font-size: 36px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(150deg, #4a90e2 0%, #7ed321 100%);
+
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+
+
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(150deg, #4a90e2, #7ed321);
+    cursor: pointer;
+    transition: 1.5s ease-in;
+    background: linear-gradient(150deg, #5b9bd5 0%, #9acf6d 100%);
+
+}
+
+
+.hero-connect:hover, .hero-resume:hover {
+    transform: scale(1.08);
+    border-color: 2px solid white;
+}
+
+
+
+@keyframes fadeIN {
+    from {
+        opacity: 0;
+    
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.me_pic {
+    padding-top: 10rem;
+    margin-top: 150px;
+    height: 400px;
+    margin: auto;
+    animation: fadeIN  ease-in 4s;
+
+    
+
+
+}
+
+
+
+
+

@@ -1,0 +1,160 @@
+/* Container for achievements */
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+/* Title styling */
+.achievements-title {
+    position: relative;
+}
+
+.achievements-title h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+/* Container for individual achievement cards */
+.achievements-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 80px;
+    
+}
+
+/* Individual achievement card styling */
+.achievement-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.achievement-format h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.achievement-format h2 {
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(0deg, #4a90e2 0%, #7ed321 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievement-format p {
+    color: #d4d4d4;
+    font-size: 15px;
+    line-height: 40px;
+    max-width: 300px;
+}
+
+.achievement-readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img1 {
+    width: 300px;
+}
+
+/* Hover effect for achievement cards */
+.achievement-format:hover {
+    border: 2px solid #ff00ff;
+    transform: scale(1.01);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .achievements-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .achievements {
+        margin: 80px 80px;
+    }
+
+    .achievements-title h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements-container {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements {
+        margin: 60px 20px;
+    }
+
+    .achievements-title h1 {
+        font-size: 40px;
+    }
+
+    .achievement-format {
+        padding: 40px;
+    }
+
+    .achievement-format h3 {
+        font-size: 22px;
+    }
+
+    .achievement-format h2 {
+        font-size: 30px;
+    }
+
+    .achievement-format p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .img1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievements {
+        margin: 40px 10px;
+    }
+
+    .achievements-title h1 {
+        font-size: 30px;
+    }
+
+    .achievement-format {
+        padding: 20px;
+    }
+
+    .achievement-format h3 {
+        font-size: 20px;
+    }
+
+    .achievement-format h2 {
+        font-size: 24px;
+    }
+
+    .achievement-format p {
+        font-size: 16px;
+    }
+
+    .img1 {
+        width: 100%;
+    }
+}
